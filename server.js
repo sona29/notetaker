@@ -12,9 +12,16 @@ const app = express();
 // Sets an initial port. We"ll use this later in our listener
 const PORT = process.env.PORT || 8080;
 
+//for home page
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/index.html'));
 });
+
+
+//for taking notes page
+app.get('/notes', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/notes.html'));
+  });
 
 app.listen(PORT, () => {
     console.log(`App listening on http://localhost:${PORT}`);
