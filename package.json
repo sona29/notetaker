@@ -3,15 +3,26 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.4"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sona29/notetaker.git"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.7"
-  }
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/sona29/notetaker/issues"
+  },
+  "homepage": "https://github.com/sona29/notetaker#readme"
 }
