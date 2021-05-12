@@ -9,6 +9,8 @@ const path = require('path');
 // Tells node that we are creating an "express" server
 const app = express();
 
+app.use(express.static(__dirname + '/public'));
+
 // Sets an initial port. We"ll use this later in our listener
 const PORT = process.env.PORT || 8080;
 
