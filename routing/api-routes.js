@@ -9,6 +9,6 @@ module.exports = function (app){
 
     app.post("/api/notes", (req, res) =>{
         
-
+        noteData.push(req.body);
     });
 };
