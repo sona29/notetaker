@@ -1,4 +1,3 @@
-
 // DEPENDENCIES
 // Series of npm packages that we will use to give our server useful functionality
 
@@ -12,18 +11,18 @@ const app = express();
 app.use(express.static(__dirname + '/public'));
 
 // Sets an initial port. We"ll use this later in our listener
+// Sets up the Express app to handle data parsing
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 const PORT = process.env.PORT || 8080;
 
-//for home page
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/index.html'));
-});
+// ROUTES
+require('./routing/api-routes')(app);
+require('./routing/html-routes')(app);
 
 
-//for taking notes page
-app.get('/notes', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/notes.html'));
-  });
+
+
 
 app.listen(PORT, () => {
     console.log(`App listening on http://localhost:${PORT}`);
