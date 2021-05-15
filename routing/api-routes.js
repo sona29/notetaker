@@ -9,7 +9,7 @@ const random = require('random')
 
 module.exports = function (app){
     app.get('/api/notes', (req, res) => {
-        // res.json(noteData);
+        
         let data = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
         res.json(data);
          
@@ -19,10 +19,11 @@ module.exports = function (app){
 
     app.post("/api/notes", (req, res) =>{
         
-        let newNote = req.body;
-        // console.log(newNote);
+        let newNote = req.body;    
 
-        console.log(random.int(0, 100)) ;
+        // generating random number
+        newNote.id = random.int(0, 100);
+        console.log("new note with id"+ newNote);
 
         // reading json file
         let data = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
