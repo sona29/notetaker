@@ -2,6 +2,10 @@
 const path = require("path");
 let noteData = require('../db/db.json');
 const fs = require("fs");
+// for generating random number
+const random = require('random')
+
+
 
 module.exports = function (app){
     app.get('/api/notes', (req, res) => {
@@ -17,6 +21,8 @@ module.exports = function (app){
         
         let newNote = req.body;
         // console.log(newNote);
+
+        console.log(random.int(0, 100)) ;
 
         // reading json file
         let data = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
