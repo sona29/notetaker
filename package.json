@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "random": "^3.0.6"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
