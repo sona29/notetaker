@@ -17,13 +17,13 @@ app.use(express.json());
 const PORT = process.env.PORT || 8080;
 
 // ROUTES
+// These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 require('./routing/api-routes')(app);
 require('./routing/html-routes')(app);
 
 
-
-
-
+// LISTENER
+// The below code effectively "starts" our server
 app.listen(PORT, () => {
     console.log(`App listening on http://localhost:${PORT}`);
   });
