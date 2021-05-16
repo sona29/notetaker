@@ -20,7 +20,10 @@ npm install
 
 ## Usage
 
-For instruction on how to use this project, please refer to walk-through video.
+- First you have to clone the repo in your local machine
+- Then run command 'npm i' to install all necessary dependencies
+- Then run command 'node server.js', it will start localhost server on port 8080
+- To run on the browser, use 'http://localhost:3000/' in URL
 
 ## Contribution
 
