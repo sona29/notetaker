@@ -22,7 +22,7 @@ module.exports = function (app){
         let newNote = req.body;    
 
         // generating random number
-        newNote.id = random.int(0, 1000);
+        newNote.id = random.int(0, 10000);
         console.log("new note with id"+ newNote);
 
         // reading json file
@@ -47,16 +47,20 @@ module.exports = function (app){
         console.log('delete id  ' + id);
 
         let data = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
-        // console.log(res.json(data)); 
+       
         for(let i =0;i<data.length;i++){
-            // console.log(i);
+           
             let idNote = data[i];
+
+            //deleting if 
             if (idNote.id == id){
 
                 // console.log('if');
                 data.splice(i, 1);
                 console.log(data);
                 fs.writeFileSync('./db/db.json', JSON.stringify(data));
+                res.json(data);
+
             }
 
         }
