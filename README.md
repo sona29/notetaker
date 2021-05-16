@@ -12,7 +12,7 @@
 
 ## Description
 
-This project lets users write and save notes. The user can keep track of tasks needed to complete. The user can also delete completed task. This application uses express.js back end. When the application is opened it is presented with landing page with a link to create a new note. When that link is clicked then it takes to the page where user can enter note title and description. The user can save the note. On the left handside of the page, the list of notes are displayed with delete icon. If user clicks on one of the note, then note details are displayed. And if user clicks on delete icon, then the note is deleted.
+This project lets users write and save notes. The user can keep track of tasks needed to complete. This helps user to organize the day. The user can also delete completed task. This application uses express.js back end.
 
 ## Installation
 
@@ -22,6 +22,12 @@ This project lets users write and save notes. The user can keep track of tasks n
 - To run on the browser, use 'http://localhost:3000/' in URL
 
 ## Usage
+
+- When the application is opened it is presented with landing page with a link to create a new note.
+- When that link is clicked then it takes to the page where user can enter note title and description. The user can save the note.
+- On the left handside of the page, the list of notes are displayed with delete icon.
+- If user clicks on one of the note, then note details are displayed.
+- If user clicks on delete icon, then the selected note is deleted.
 
 ## Contribution
 
