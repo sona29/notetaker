@@ -29,6 +29,10 @@ This project lets users write and save notes. The user can keep track of tasks n
 - If user clicks on one of the note, then note details are displayed.
 - If user clicks on delete icon, then the selected note is deleted.
 
+## Mockup
+
+![alt text](assets/images/screenshot.png)
+
 ## Contribution
 
 Please feel free in making contribution to this repository. But please first discuss the change via email with me. I will try to get back to you as soon as possible.
