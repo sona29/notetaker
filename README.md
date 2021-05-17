@@ -19,7 +19,7 @@ This project lets users write and save notes. The user can keep track of tasks n
 - First you have to clone the repo in your local machine
 - Then run command 'npm i' to install all necessary dependencies
 - Then run command 'node server.js', it will start localhost server on port 8080
-- To run on the browser, use 'http://localhost:3000/' in URL
+- To run on the browser, use 'http://localhost:8080/' in URL
 
 ## Usage
 
