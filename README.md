@@ -33,6 +33,10 @@ This project lets users write and save notes. The user can keep track of tasks n
 
 ![alt text](assets/images/screenshot.png)
 
+## Link to deployed application in heroku
+
+https://thawing-inlet-17522.herokuapp.com/
+
 ## Contribution
 
 Please feel free in making contribution to this repository. But please first discuss the change via email with me. I will try to get back to you as soon as possible.
